@@ -1,0 +1,22 @@
+Usando require
+códigos em arquivos separados
+
+Arquivo01
+var soma = function(a,b){
+    return a+b;
+}
+
+module.exports = soma; => exporta a função soma 
+
+arquivo02
+var somaF = require("./soma"); => Recebe a função soma e coloca na variável somaF
+_______________________________________________________________________________
+Abrindo um servidor http
+
+var http = require('http');
+
+
+http.createServer().listen(8081) =>createServer abre o servidor e listen() seleciona a porta
+______________________________________________________________________________
+Instalando express (express é um framework orientado a rotas)
+npm install express
